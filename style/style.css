@@ -1,0 +1,17 @@
+body {
+background-color: #D8D8D8;
+}
+
+
+.cajas {
+  background-color: #BDBDBD;
+
+}
+
+.caja {
+  border: 1px solid #000;
+  min-height: 33%;
+  min-width: 33%;
+}
+
+
