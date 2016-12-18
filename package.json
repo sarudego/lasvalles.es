@@ -1,0 +1,43 @@
+{
+  "name": "lasvalles.com",
+  "version": "1.0.0",
+  "description": "Web de Quesos Las Valles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarudego/lasvalles.es.git"
+  },
+  "keywords": [
+    "queso",
+    "las",
+    "valles",
+    "bajo",
+    "martin",
+    "samper",
+    "de",
+    "calanda",
+    "teruel",
+    "oveja",
+    "leche",
+    "cruda"
+  ],
+  "author": "Samuel Ruiz de Gopegui Muñoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarudego/lasvalles.es/issues"
+  },
+  "homepage": "https://github.com/sarudego/lasvalles.es#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "angular-ui-router": "^0.3.2",
+    "body-parser": "^1.15.2",
+    "bower": "^1.8.0",
+    "compression": "^1.6.2",
+    "express": "^4.14.0"
+  }
+}
