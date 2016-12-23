@@ -19,7 +19,7 @@ angular.module("lasvalles", ['ui.router','ngAnimate'])
   .state('home',{
     url : "/home",
     controller : "homeCtrl",
-    templateUrl : Config.baseViews + "granjalasvalles.html"
+    templateUrl : Config.baseViews + "home.html"
   })
   $urlRouterProvider.otherwise('/home');
 
