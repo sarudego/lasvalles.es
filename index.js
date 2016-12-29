@@ -1,27 +1,30 @@
 var express = require('express'),
-compression = require('compression'),
-bodyParser = require('body-parser');
+  compression = require('compression'),
+  bodyParser = require('body-parser'),
+  cors = require('cors');
 
 
 var app = express();
 
 //config views
 app.set('view engine', 'html');
-//app.set('views','./src/views');
+app.set('views','./dist/views');
 
 app.set('port', (process.env.PORT || 5000));
 
+app.use(bodyParser.json('application/json'));
+app.use(cors());
 
-//app.use(bodyParser.json('application/json'));
+app.use(compression());
+app.use(express.static('./dist'));
+//app.use('/static', express.static(__dirname + '/src'));
 
 //app.get('/', function(req, res){
-//  res.send('hello world');
+  //res.sendFile('index.html');
 //});
 app.use(function(req,res){
-  res.sendFile(__dirname+'/src/views/index.html');
+  res.sendFile(__dirname+'/dist/views/index.html');
 });
-//static files
-app.use(compression());
 
 
 app.listen(app.get('port'), function(){

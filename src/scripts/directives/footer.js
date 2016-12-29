@@ -1,5 +1,5 @@
-angular.module('lasvalles')
-.directive('lasvallesfooter',function(Config){
+angular.module('valles')
+.directive('foote',function(Config){
   return{
     restrict : 'E',
     replace : true,

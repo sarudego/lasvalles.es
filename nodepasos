@@ -1,11 +1,15 @@
-npm init --> iniciar node
-npm install gulp --save-dev --> instala gulp como "dependencia" de desarrollo
-express - socket.io
-npm install express --save
+1--> preparar con bower librerias 
+2--> preparar gulp para minificar ficheros
+3--> npm init --> iniciar node
+    npm install gulp --save-dev --> instala gulp como "dependencia" de desarrollo
+    express - socket.io
+    npm install express --save
+
+
 
 importar util  --> util.js con funciones varias
 
-(vts)
+
 creacion de servidor:
 app.use('/') --> crea router con /
 
@@ -25,5 +29,6 @@ estructura:
 - lib --> routers... middleware del servidor
 
 
-usar bower para librerias de cliente
+nodemon
+
 

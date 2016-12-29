@@ -1,27 +1,34 @@
-angular.module("lasvalles", ['ui.router','ngAnimate'])
+angular.module("valles", ['ui.router','ngRoute'])
 .constant('Config',{
-  baseViews : '../views'
+  baseViews : '../views/'
 })
 
-.config(function(Config,$stateProvider,$urlRouterProvider){
+.config(function(Config,$stateProvider){
   $stateProvider
-  .state('queso',{
-    url : "/quesolasvalles",
-    controller : "quesoCtrl",
-    templateUrl : Config.baseViews + "quesolasvalles.html"
-  })
-  .state('granja',{
-    url : "/granjalasvalles",
-    controller : "granjaCtrl",
-    templateUrl : Config.baseViews + "granjalasvalles.html"
-  })
+  //.state('queso',{
+    //url : "/quesolasvalles",
+    //controller : "quesoCtrl",
+    //template : Config.baseViews + "queso.html"
+  //})
+  //.state('granja',{
+    //url : "/granjalasvalles",
+    //controller : "granjaCtrl",
+    //template : Config.baseViews + "granja.html"
+  //})
 
   .state('home',{
-    url : "/home",
-    controller : "homeCtrl",
-    templateUrl : Config.baseViews + "home.html"
+    url : "/",
+    //controller : "homeCtrl",
+    template : Config.baseViews + "home.html"
   })
-  $urlRouterProvider.otherwise('/home');
+   //var home = {
+       //name: 'home',
+       //url: '/',
+    //template : Config.baseViews + "home.html"
+     //}
+
+    //$stateProvider.state(home);
+  //$urlRouterProvider.otherwise("/home");
 
 
 
