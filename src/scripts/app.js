@@ -2,7 +2,6 @@ angular.module("valles", ['ui.router','ngRoute'])
 .constant('Config',{
   baseViews : '../views/'
 })
-
 .config(function(Config,$stateProvider){
   $stateProvider
   //.state('queso',{
