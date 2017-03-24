@@ -1,4 +1,4 @@
-//angular.module('valles')
-//.controller('homeCtrl',function(Config){
+angular.module('valles')
+.controller('homeCtrl',function(Config){
 
-//});
+});
