@@ -43,7 +43,8 @@ gulp.task('css-min',function(){
 
   return gulp.src([
     './src/style/import.styl',
-    './src/style/**/*.css'
+    './src/style/**/*.css',
+    './src/style/**/*.styl'
   ])
   .pipe(filter)
   .pipe(sourcemaps.init())
@@ -78,7 +79,8 @@ gulp.task('copy-html', function(){
     'scripts/vendor.min.js',
     'scripts/**/*.js',
     'style/vendor.min.css',
-    'style/**/*.css'
+    'style/**/*.css',
+    'style/**/*.styl'  //mine
   ], {read: false,cwd: __dirname + '/dist/'});
 
   return gulp.src('./src/views/**/*.html')
