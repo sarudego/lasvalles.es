@@ -17,7 +17,7 @@ app.use(cors());
 
 app.use(compression());
 app.use(express.static('./dist'));
-//app.use('/static', express.static(__dirname + '/src'));
+app.use('/static', express.static(__dirname + '/src'));
 
 app.use(function(req,res){
   res.sendFile(__dirname+'/dist/views/index.html');
